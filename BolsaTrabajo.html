@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Trabajo Don Bosco</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="principal">
+        <div class="container-xl" id="form-container">
+            <form name="fmrBolsa" id="fmrBolsa" action="javascript:void(0)">
+                <h1 class="head">Bolsa de trabajo DB</h1>
+                    <div class="inputBx">
+                        <span>Nombre</span>
+                        <input type="text" name="txtNombre" id="txtNombre" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="inputBx">
+                        <span>Apellido</span>
+                        <input type="text" name="txtApellido" id="txtApellido" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="inputBx">
+                        <span>País de nacimiento</span>
+                        <div class="content-select">
+                            <select name="paisn" id="paisn">
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Costa-Rica">Costa Rica</option>
+                            </select>
+                            <i></i>
+                        </div>
+                        
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>E-mail</span>
+                        <input type="text" name="txtMail" id="txtMail" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>Género</span>
+                        <div class="content-select">
+                            <select name="genero" id="genero">
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+                            <i></i>
+                        </div>
+                        
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>Fecha de nacimiento</span>
+                        <input type="date" name="fechaNac" id="fechaNac" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>País de residencia</span>
+                        <div class="content-select">
+                            <select name="paisr" id="paisr">
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Costa-Rica">Costa Rica</option>
+                            </select>
+                            <i></i>
+                        </div>
+                       
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>Departamento</span>
+                        <div class="content-select">
+                        <select name="departamento" id="departamento">
+                        </select>
+                        <i></i>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>Teléfono de casa</span>
+                        <input type="tel" name="telCasa" id="telCasa" pattern="[0-9]{8}" maxlength="8" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>Teléfono celular</span>
+                        <input type="tel" name="telCelular" id="telCelular" required pattern="[0-9]{8}" maxlength="8">
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <span>Domicilio</span>
+                        <input type="text" name="txtDomicilio" id="txtDomicilio" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" class="button" id="submitDatos" name="submitDatos" value="Enviar datos">
+                    </div>
+            </form>
+        </div> 
+        <div id="content">  
+            
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/550843a4c7.js" crossorigin="anonymous"></script>
+</html>
